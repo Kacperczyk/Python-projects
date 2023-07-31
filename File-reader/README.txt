@@ -10,6 +10,9 @@ Its the program which allow user to choose file (csv file) and read this file wi
 3) b) If the user enters "STOP," the loop is interrupted, and we proceed to step 4).
 4) We choose what to do next.
 4) a) Loading a file with the selected columns.
+4) b) coming soon
+4) c) coming soon
+4) d) coming soon
 
 main.py2
 This simple program allow user to create new csv file with a certain amount of randomly generated persons.
