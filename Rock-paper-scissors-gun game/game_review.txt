@@ -1,0 +1,5 @@
+Round_number | Player_choice | Cpu_choice | Results |
+      1      |      rock     |    rock    |   Draw  |
+      2      |     paper     |  scissors  |   Lose  |
+-----------------------------------------------------
+Final score: 0
