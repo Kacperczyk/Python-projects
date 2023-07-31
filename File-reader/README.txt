@@ -1,4 +1,4 @@
-xt1) Upon launching it shows list of columns of selected file.
+1) Upon launching it shows list of columns of selected file.
 2) The user is able to choose the columns of interest.
 3) After selecting one column, they must decide whether to choose another.
 3) a) If yes, then the chosen column is removed from the pool of available columns.
