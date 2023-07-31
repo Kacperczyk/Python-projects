@@ -1,3 +1,6 @@
+main.py
+Its the program which allow user to choose file (csv file) and read this file with limited columns.
+----------------------------------------------------------------------------------------------------
 1) Upon launching it shows list of columns of selected file.
 2) The user is able to choose the columns of interest.
 3) After selecting one column, they must decide whether to choose another.
@@ -7,3 +10,9 @@
 3) b) If the user enters "STOP," the loop is interrupted, and we proceed to step 4).
 4) We choose what to do next.
 4) a) Loading a file with the selected columns.
+
+main.py2
+Its the program which allow user to create new csv file with a certain amount of randomly generated persons.
+The number of columns is strictly limited.
+This program was created solely for the purpose of main.py
+--------------------------------------------------------------------------------------------------
