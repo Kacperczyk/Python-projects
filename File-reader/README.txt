@@ -12,7 +12,7 @@ Its the program which allow user to choose file (csv file) and read this file wi
 4) a) Loading a file with the selected columns.
 
 main.py2
-Its the program which allow user to create new csv file with a certain amount of randomly generated persons.
+This simple program allow user to create new csv file with a certain amount of randomly generated persons.
 The number of columns is strictly limited.
 This program was created solely for the purpose of main.py
 --------------------------------------------------------------------------------------------------
