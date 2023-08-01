@@ -7,21 +7,21 @@ with open('Persons_creator.txt', 'r') as file_r:
     all_chosen_columns = []
 
     while True:
-        chosen_column = input(f"Proszę wybrać kolumny lub wpisać STOP:\n{available_columns}: ")
+        chosen_column = input(f"Please chose column or type 'stop' :\n{available_columns}: ")
         if chosen_column in available_columns:
             available_columns.remove(chosen_column)
             all_chosen_columns.append(chosen_column)
         elif chosen_column.lower() == 'stop':
             break
         else:
-            print("Nie ma takiej kolumny!")
+            print("There is no such columns!")
         if not available_columns:
-            print("Wyczerpałeś dostępne kolumny.")
+            print("You have exhausted the available columns ")
             break
 
-    print(f"\nWybrane kolumny to: {all_chosen_columns}")
+    print(f"\nChosen columns: {all_chosen_columns}")
 
-    read_or_what = input("\nCo chcesz teraz zrobić?: \n1) Wczytaj wybrane kolumny z pliku\nOpcja nr: ")
+    read_or_what = input("\nSelect the operation you want to perform ?: \n1) Read chosen columns from the file\nOpcja nr: ")
     if read_or_what.lower() == '1':
 
     #
