@@ -24,6 +24,8 @@ with open('Persons_creator.txt', 'r') as file_r:
     read_or_what = input("\nCo chcesz teraz zrobić?: \n1) Wczytaj wybrane kolumny z pliku\nOpcja nr: ")
     if read_or_what.lower() == '1':
 
+    #
+
         with open('Persons_creator.txt', 'r') as file_r2:
             csv_reader = csv.DictReader(file_r2)
             for row in csv_reader:
