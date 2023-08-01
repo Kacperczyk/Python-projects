@@ -8,5 +8,6 @@ DONE 5) Stores the history of the player's and computer's choices, as well as th
 DONE 6) Saves game results to txt file in an easy-to-read list format.
 DONE 7) The code responsible for saving the history and results is separated into functions, allowing for a more modular code and easier management.
 DONE 8) Added new 'secret weapon' - 'gun' to the game as well as adding  resolveing 'fights' for this weapon
-
-IN PROGRESS 9) Adding USER INTERFACE to the game
+IN PROGRESS 10) rewriting code with better functions
+IN PROGRESS 11) rewriting code with classes
+IN PROGRESS 12) Adding USER INTERFACE to the game
