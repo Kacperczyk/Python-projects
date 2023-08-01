@@ -1,6 +1,6 @@
 import csv
 
-with open('Persons_creator.txt', 'r') as file_r:
+with open('New_persons.txt', 'r') as file_r:
     csv_reader = csv.DictReader(file_r)
 
     available_columns = csv_reader.fieldnames
@@ -24,9 +24,8 @@ with open('Persons_creator.txt', 'r') as file_r:
     read_or_what = input("\nSelect the operation you want to perform ?: \n1) Read chosen columns from the file\nOpcja nr: ")
     if read_or_what.lower() == '1':
 
-    #
 
-        with open('Persons_creator.txt', 'r') as file_r2:
+        with open('New_persons.txt', 'r') as file_r2:
             csv_reader = csv.DictReader(file_r2)
             for row in csv_reader:
                 selected_data = [row[column] for column in all_chosen_columns]
