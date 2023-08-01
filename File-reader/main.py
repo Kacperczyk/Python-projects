@@ -47,3 +47,4 @@ with open('New_persons.txt', 'r') as file_r:
             for line in data:
                 csv_writer.writerow({column: line[column] for column in all_chosen_columns})
 
+
