@@ -1,18 +1,21 @@
-main.py
+dimain.py
 Its the program which allow user to choose file (csv file) and read this file with limited columns.
 ----------------------------------------------------------------------------------------------------
-1) Upon launching it shows list of columns of selected file.
-2) The user is able to choose the columns of interest.
-3) After selecting one column, they must decide whether to choose another.
-3) a) If yes, then the chosen column is removed from the pool of available columns.
+DONE 1) Upon launching it shows list of columns of selected file.
+DONE 2) The user is able to choose the columns of interest.
+DONE 3) After selecting one column, they must decide whether to choose another.
+DONE 3) a) If yes, then the chosen column is removed from the pool of available columns.
       The selected column is added to an unseen list, which stores the user's choices.
       This will enable later loading of the file with only the chosen columns.
-3) b) If the user type "stop" the loop is interrupted, and we proceed to step 4).
-4) We choose what to do next.
-4) a) Loading a file with the selected columns.
-4) b) coming soon
-4) c) coming soon
-4) d) coming soon
+DONE 3) b) If the user type "stop" the loop is interrupted, and we proceed to step 4).
+DONE 4) We choose what to do next.
+DONE 4) a) Reading a file with the selected columns.
+DONE 4) b) Saving as a new file with the selected columns.
+IN PROGRESS 4) c) Reading a file with the selected columns as a list
+IN PROGRESS 4) d) Saving as a new file with the selected columns as a list
+IN PROGRESS 5) Reorganizing the code and writing it into functions
+IN PROGRESS 6) Reorganizing all the code and saving it in classes
+IN PROGRESS 7) Adding user interface
 
 main.py2
 This simple program allow user to create new csv file with a certain amount of randomly generated persons.
