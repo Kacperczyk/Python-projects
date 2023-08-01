@@ -2,6 +2,7 @@ import csv
 
 with open('New_persons.txt', 'r') as file_r:
     csv_reader = csv.DictReader(file_r)
+    data = list(csv_reader)
 
     available_columns = csv_reader.fieldnames
     all_chosen_columns = []
@@ -21,12 +22,28 @@ with open('New_persons.txt', 'r') as file_r:
 
     print(f"\nChosen columns: {all_chosen_columns}")
 
-    read_or_what = input("\nSelect the operation you want to perform ?: \n1) Read chosen columns from the file\nOpcja nr: ")
-    if read_or_what.lower() == '1':
+    available_operations_li = ['1) Read and print chosen columns from the file',
+                               '2) Save chosen columns to another file']
+    joined_a_op_li = '\n'.join(available_operations_li)
+    print(f"Select operation to perform:\n{joined_a_op_li}")
+    read_or_what = input('Your option: ')
 
+    if read_or_what.lower() == '1':
 
         with open('New_persons.txt', 'r') as file_r2:
             csv_reader = csv.DictReader(file_r2)
-            for row in csv_reader:
-                selected_data = [row[column] for column in all_chosen_columns]
+            for line in csv_reader:
+                selected_data = [line[column] for column in all_chosen_columns]
                 print(', '.join(selected_data))
+
+    elif read_or_what.lower() == '2':
+        print(all_chosen_columns)
+        new_file_name = input('Name for your new file: ')
+        with open(new_file_name, 'w', newline='') as file_f3:
+            fieldnames = all_chosen_columns
+            csv_writer = csv.DictWriter(file_f3, fieldnames=fieldnames)
+
+            csv_writer.writeheader()
+            for line in data:
+                csv_writer.writerow({column: line[column] for column in all_chosen_columns})
+
