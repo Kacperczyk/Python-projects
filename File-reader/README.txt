@@ -16,7 +16,8 @@ IN PROGRESS 4) c) Reading a file with the selected columns as a table
 IN PROGRESS 4) d) Saving as a new file with the selected columns as a table
 IN PROGRESS 5) Reorganizing the code and writing it into functions
 IN PROGRESS 6) Reorganizing all the code and saving it in classes
-IN PROGRESS 7) Adding user interface
+IN PROGRESS 7) Using Pandas and numpy to optimize the code
+IN PROGRESS 8) Adding user interface
 IN PROGRESS BONUS) Adding comments
 
 main.py2
