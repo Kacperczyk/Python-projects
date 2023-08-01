@@ -10,7 +10,8 @@ DONE 3) a) If yes, then the chosen column is removed from the pool of available 
 DONE 3) b) If the user type "stop" the loop is interrupted, and we proceed to step 4).
 DONE 4) We choose what to do next.
 DONE 4) a) Reading a file with the selected columns.
-DONE 4) b) Saving as a new file with the selected columns. |REMARKS: currently stores the file as a list, which consumes a lot of memory, a generator should be used
+DONE 4) b) Saving as a new file with the selected columns. |
+        REMARKS: currently stores whole file(New_persons.txt) as a list, which consumes a lot of memory, a generator should be used
 IN PROGRESS 4) c) Reading a file with the selected columns as a table
 IN PROGRESS 4) d) Saving as a new file with the selected columns as a table
 IN PROGRESS 5) Reorganizing the code and writing it into functions
