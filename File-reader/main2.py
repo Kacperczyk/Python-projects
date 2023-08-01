@@ -20,6 +20,7 @@ def persons_saver(x):
     with open('New_persons.txt', 'w', newline='') as file:
         fieldnames = ['f_names', 'l_names', 'jobs', 'age', 'salary']
         writer = csv.DictWriter(file, fieldnames=fieldnames)
+        writer.writeheader()
 
         for line in person_generator(x):
             writer.writerow(line)
