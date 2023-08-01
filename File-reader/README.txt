@@ -16,6 +16,7 @@ IN PROGRESS 4) d) Saving as a new file with the selected columns as a list
 IN PROGRESS 5) Reorganizing the code and writing it into functions
 IN PROGRESS 6) Reorganizing all the code and saving it in classes
 IN PROGRESS 7) Adding user interface
+IN PROGRESS BONUS) Adding comments
 
 main.py2
 This simple program allow user to create new csv file with a certain amount of randomly generated persons.
