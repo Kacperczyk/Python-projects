@@ -62,9 +62,9 @@ with open('New_persons.txt', 'r') as file_r:
             column_lengths = {
                 'f_names': 10,
                 'l_names': 10,
-                'jobs': 4,
-                'salary': 6,
-                'age': 3
+                'jobs': 5,
+                'salary': 7,
+                'age': 4
             }
             # Calculate the width for the whole table, considering only the chosen columns
             total_width = sum(column_lengths[column] for column in all_chosen_columns) + len(all_chosen_columns) * 3 + 1
@@ -85,6 +85,45 @@ with open('New_persons.txt', 'r') as file_r:
                 print('|')
 
             print('-' * total_width)
+
+    elif read_or_what.lower() == '4':
+        # Option 4: Save to a new file as a table
+        new_file_name2 = input('Name for your new file: ')
+        with open(new_file_name2, 'w', newline='') as file_f5:
+            fieldnames = all_chosen_columns
+            csv_writer = csv.DictWriter(file_f5, fieldnames=fieldnames)
+
+            column_lengths = {
+                'f_names': 10,
+                'l_names': 10,
+                'jobs': 5,
+                'salary': 7,
+                'age': 4
+            }
+            total_width = sum(column_lengths[column] for column in all_chosen_columns) + len(all_chosen_columns) * 2 + 1
+
+            #writing header to new file as a table
+            file_f5.write('-' * total_width + '\n')
+            file_f5.write('|')
+            for column in all_chosen_columns:
+                file_f5.write(f' {column.ljust(column_lengths[column])}|')
+            file_f5.write('\n')
+            file_f5.write('-' * total_width + '\n')
+
+            #writing lines to new file as a table
+            for line in data:
+                selected_data = [line[column] for column in all_chosen_columns]
+                for i, column in enumerate(all_chosen_columns):
+                    file_f5.write(f'| {selected_data[i].ljust(column_lengths[column])}')
+                file_f5.write('|')
+                file_f5.write('\n')
+            file_f5.write('-' * total_width + '\n')
+
+
+
+
+
+
 
 
 
