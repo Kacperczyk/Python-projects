@@ -23,7 +23,9 @@ with open('New_persons.txt', 'r') as file_r:
     print(f"\nChosen columns: {all_chosen_columns}")
 
     available_operations_li = ['1) Read and print chosen columns from the file',
-                               '2) Save chosen columns to another file']
+                               '2) Save chosen columns to another file',
+                               '3) Read and print as a table',
+                               '4) Save to new file as a table']
     joined_a_op_li = '\n'.join(available_operations_li)
     print(f"Select operation to perform:\n{joined_a_op_li}")
     read_or_what = input('Your option: ')
@@ -46,5 +48,40 @@ with open('New_persons.txt', 'r') as file_r:
             csv_writer.writeheader()
             for line in data:
                 csv_writer.writerow({column: line[column] for column in all_chosen_columns})
-#
+
+    elif read_or_what.lower() == '3':
+        with open('New_persons.txt', 'r') as file_r4:
+            csv_reader = csv.DictReader(file_r4)
+
+            # Asign column lenght for all columns
+            column_lengths = {
+                'f_names': 10,
+                'l_names': 10,
+                'jobs': 4,
+                'salary': 6,
+                'age': 3
+            }
+            # Calculate width for whole table, cosidering only chosen columns
+            total_width = sum(column_lengths[column] for column in all_chosen_columns) + len(all_chosen_columns) * 3 + 1
+
+            # Display heading for the table
+            print('-' * total_width)
+            print('|', end=' ')
+            for column in all_chosen_columns:
+                print(f'{column.ljust(column_lengths[column])}', end=' | ')
+            print()
+            print('-' * total_width)
+
+            for row in csv_reader:
+                selected_data = [row[column] for column in all_chosen_columns]
+                for i, column in enumerate(all_chosen_columns):
+                    print(f'| {selected_data[i].ljust(column_lengths[column])}', end=' ')
+                print('|')
+
+            print('-' * total_width)
+
+
+
+
+
 
