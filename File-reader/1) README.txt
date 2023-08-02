@@ -1,4 +1,4 @@
-dimain.py
+main.py
 Its the program which allow user to choose file (csv file) and read this file with limited columns.
 ----------------------------------------------------------------------------------------------------
 DONE 1) Upon launching it shows list of columns of selected file.
