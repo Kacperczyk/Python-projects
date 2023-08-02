@@ -13,7 +13,8 @@ DONE 4) a) Reading a file with the selected columns.
 DONE 4) b) Saving as a new file with the selected columns.
         REMARKS: currently stores whole file(New_persons.txt) as a list, which consumes a lot of memory, a generator should be used
 DONE 4) c) Reading a file with the selected columns as a table
-IN PROGRESS 4) d) Saving as a new file with the selected columns as a table
+DONE 4) d) Saving as a new file with the selected columns as a table
+     REMARKS: the same code is repeated in many places - fix it
 IN PROGRESS 5) Reorganizing the code and writing it into functions
 IN PROGRESS 6) Reorganizing all the code and saving it in classes
 IN PROGRESS 7) Using Pandas and numpy to optimize the code
